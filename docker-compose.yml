@@ -1,0 +1,11 @@
+
+
+services:
+  bot:
+    build: .
+    container_name: bot-for-tender
+    restart: always
+    command: python main.py
+    # Если нужно видеть логи в реальном времени:
+    tty: true
+    stdin_open: true
